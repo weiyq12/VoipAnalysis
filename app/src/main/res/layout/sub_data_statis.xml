@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="15dip"
+              android:background="@android:color/darker_gray"
+              android:orientation="vertical"
+              android:padding="1dip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:text="数据统计"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="5dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="排序方式: "
+                    android:textSize="18sp"/>
+
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rb_order_by_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:checked="true"
+                        android:text="呼叫次数"
+                        android:textSize="16sp"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_order_by_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:checked="false"
+                        android:text="呼通率"
+                        android:textSize="16sp"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_order_by_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:checked="false"
+                        android:text="主叫账号"
+                        android:textSize="16sp"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@android:color/darker_gray"/>
+
+            <com.zte.voipanalysis.view.InnerScrollView
+                android:id="@+id/sv_statis"
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:layout_gravity="bottom"
+                android:layout_margin="5dip"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:scrollbars="vertical"
+                android:fadeScrollbars="false"
+                android:background="@android:color/white">
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="5dip">
+
+                    <TextView
+                        android:id="@+id/tv_statis_info_display"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="数据统计结果展示..."
+                        android:scrollbars="vertical"
+                        android:textSize="12sp"/>
+
+                </HorizontalScrollView>
+
+            </com.zte.voipanalysis.view.InnerScrollView>
+
+            <ProgressBar
+                android:id="@+id/pb_statis_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="10dip"
+                android:layout_gravity="center_horizontal"
+                android:max="100"
+                android:progress="0"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@android:color/darker_gray"/>
+
+            <Button
+                android:id="@+id/btn_statis_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="开始统计"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

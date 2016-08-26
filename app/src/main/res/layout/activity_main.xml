@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zte.voipanalysis.view.InnerScrollView
+    android:id="@+id/sv_scroll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:scrollbarStyle="outsideOverlay"
+    android:fillViewport="true"
+    android:padding="10dip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:text="VOIP呼叫数据分析"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <include layout="@layout/sub_data_download"/>
+
+        <include layout="@layout/sub_data_select"/>
+
+        <include layout="@layout/sub_data_statis"/>
+
+        <include layout="@layout/sub_data_detail"/>
+
+        <Button
+            android:id="@+id/btn_one_key_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dip"
+            android:textSize="20sp"
+            android:text="一键运行"/>
+
+        <Button
+            android:id="@+id/btn_one_key_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:layout_marginBottom="25dip"
+            android:textSize="20sp"
+            android:text="一键保存"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="25dip"
+            android:text="版本: V1.0 (2016.8.23)"/>
+
+    </LinearLayout>
+
+</com.zte.voipanalysis.view.InnerScrollView>

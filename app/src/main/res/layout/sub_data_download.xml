@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_sync"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/darker_gray"
+              android:padding="1dip"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:text="数据同步"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="5dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="起始日期: "
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/et_sync_start_date"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="YYYY-MM-DD"
+                    android:inputType="datetime"
+                    android:text="2016-08-01"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="5dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="结束日期: "
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/et_sync_end_date"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="YYYY-MM-DD"
+                    android:inputType="datetime"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@android:color/darker_gray"/>
+
+            <com.zte.voipanalysis.view.InnerScrollView
+                android:id="@+id/sv_download"
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:layout_gravity="bottom"
+                android:layout_margin="5dip"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:scrollbars="vertical"
+                android:fadeScrollbars="false"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:id="@+id/tv_sync_info_display"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="数据实时同步信息...\n\n"
+                    android:textSize="12sp"/>
+
+            </com.zte.voipanalysis.view.InnerScrollView>
+
+            <ProgressBar
+                android:id="@+id/pb_sync_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="10dip"
+                android:max="100"
+                android:progress="0"
+                android:layout_gravity="center_horizontal"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@android:color/darker_gray"/>
+
+            <Button
+                android:id="@+id/btn_sync_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18sp"
+                android:text="开始同步"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

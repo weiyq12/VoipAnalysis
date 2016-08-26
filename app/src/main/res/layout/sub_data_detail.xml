@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="15dip"
+              android:background="@android:color/darker_gray"
+              android:orientation="vertical"
+              android:padding="1dip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:text="详情信息"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="5dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="账号: "
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/et_detail_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:inputType="number"
+                    android:hint="请输入主叫或被叫的账号"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@android:color/darker_gray"/>
+
+            <com.zte.voipanalysis.view.InnerScrollView
+                android:id="@+id/sv_detail"
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:layout_gravity="bottom"
+                android:layout_margin="5dip"
+                android:scrollbars="vertical"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:fadeScrollbars="false"
+                android:background="@android:color/white">
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="5dip">
+
+                <TextView
+                    android:id="@+id/tv_detail_info_display"
+                    android:layout_width="600dip"
+                    android:layout_height="wrap_content"
+                    android:hint="详情记录信息展示..."
+                    android:textSize="12sp"/>
+
+            </HorizontalScrollView>
+
+            </com.zte.voipanalysis.view.InnerScrollView>
+
+            <ProgressBar
+                android:id="@+id/pb_detail_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="10dip"
+                android:layout_gravity="center_horizontal"
+                android:max="100"
+                android:progress="0"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@android:color/darker_gray"/>
+
+            <Button
+                android:id="@+id/btn_detail_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="开始查询"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

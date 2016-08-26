@@ -1,0 +1,224 @@
+VOIP呼叫分析结果内容
+
+
+(1) 数据同步信息:
+
+23:41:26 开始检查服务器(192.168.170.87)...
+23:41:31 检查服务器(192.168.170.87) ERROR
+23:41:31 开始检查服务器(192.168.170.89)...
+23:41:36 检查服务器(192.168.170.89) ERROR
+23:41:36 开始检查服务器(moaportal.zte.com.cn)...
+23:41:37 检查服务器(moaportal.zte.com.cn) OK, 映射为 192.168.170.89
+23:41:37 moavoip_cdr.20160822.txt 本地文件已经是最新的
+23:41:37 本次同步操作结束
+
+(2) 数据筛选信息:
+
+23:41:39 参数检验: OK
+23:41:39 开始搜索匹配的文件路径列表
+23:41:39 匹配的文件路径个数为: 2
+23:41:39 读取记录文件 /storage/emulated/0/VoipAnalysis/VoipRecord/192.168.170.89/201608/moavoip_cdr.20160822.txt
+23:41:39 匹配的记录新增条数: 33
+23:41:39 读取记录文件 /storage/emulated/0/VoipAnalysis/VoipRecord/192.168.170.87/201608/moavoip_cdr.20160822.txt
+23:41:39 匹配的记录新增条数: 35
+23:41:39 筛选完成, 匹配的记录总条数为: 68
+
+(3) 数据统计信息:
+
+23:41:41 参数信息校验: OK
+23:41:41 筛选结果的总体的统计中...
+23:41:41 筛选数据的总体统计结果: 
+总呼叫次数: 68
+正常通话次数: 23
+对方忙碌次数: 18
+对方拒绝次数: 0
+呼通率: 60%
+
+
+23:41:41 以主叫URI分类统计中...
+23:41:41 以呼叫者URI分类完成, 主叫个数: 12
+23:41:41 以呼叫次数和接通率排序中...
+23:41:41 排序完成
+23:41:41 输出结果格式化中...
+23:41:41 格式化完成
+
+
+   主叫URI     呼叫次数  通话次数  忙碌次数  拒绝次数   呼通率   
+    10145777          43            17            18            0            81%      
+   6396000411         11            0             0             0             0%      
+    10099429          3             1             0             0            33%      
+    10007438          2             1             0             0            50%      
+                      2             0             0             0             0%      
+    10002450          1             1             0             0            100%     
+    10009810          1             1             0             0            100%     
+    10022006          1             1             0             0            100%     
+    10105858          1             1             0             0            100%     
+    10007930          1             0             0             0             0%      
+    10039081          1             0             0             0             0%      
+   6407000865         1             0             0             0             0%      
+
+
+(4) 详情信息:
+
+23:41:43 详情信息查询开始
+
+时间|终端类型|主叫账号|被叫账号|通话时长|结果码|结果描述|是否接通
+20160822154140|I|sip:6396000411@zte.com.cn|sip:10189433@zte.com.cn|0|1|localCancel|false
+20160822154158|I|sip:6396000411@zte.com.cn|sip:10189433@zte.com.cn|0|1|localCancel|false
+20160822165925|I|sip:6396000411@zte.com.cn|sip:10189433@zte.com.cn|0|1|localCancel|false
+20160822170039|I|sip:6396000411@zte.com.cn|sip:10189433@zte.com.cn|0|1|localCancel|false
+20160822171407|I|sip:6396000411@zte.com.cn|sip:10189433@zte.com.cn|0|1|localCancel|false
+20160822154237|I|sip:6396000411@zte.com.cn|sip:10189433@zte.com.cn|0|1|localCancel|false
+20160822160630|I|sip:6396000411@zte.com.cn|sip:10189433@zte.com.cn|0|1|localCancel|false
+20160822164617|I|sip:6396000411@zte.com.cn|sip:10189433@zte.com.cn|0|1|localCancel|false
+20160822165159|I|sip:6396000411@zte.com.cn|sip:10189433@zte.com.cn|0|1|localCancel|false
+20160822165508|I|sip:6396000411@zte.com.cn|sip:10189433@zte.com.cn|0|1|localCancel|false
+20160822170701|I|sip:6396000411@zte.com.cn|sip:10189433@zte.com.cn|0|1|localCancel|false
+--------------------------------------------------------------------
+
+
+20160822125630|A|sip:10007438@zte.com.cn|sip:10009810@zte.com.cn|534|0|CallEnd_Success
+20160822124705|A|sip:10007438@zte.com.cn|sip:10009810@zte.com.cn|0|14|CallEnd_RemoteSBCRegisterFailed
+--------------------------------------------------------------------
+
+
+20160822085541|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|18|remoteNoAnswer|false
+20160822090122|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822090341|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822090546|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822095351|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|1|localCancel|false
+20160822095521|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822095542|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822101156|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|2|22|remoteHungUp|true
+20160822101549|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|7|22|remoteHungUp|true
+20160822102515|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|1|22|remoteHungUp|true
+20160822105228|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|18|remoteNoAnswer|false
+20160822110130|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|4|7|localHungup|true
+20160822110617|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|18|remoteNoAnswer|false
+20160822111139|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822111205|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822111235|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822111308|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822161648|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|18|remoteNoAnswer|false
+20160822222221|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|4|22|remoteHungUp|true
+20160822222318|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|5|22|remoteHungUp|true
+20160822085818|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822085938|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822090034|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822090242|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822091022|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822091112|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822100111|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|4|22|remoteHungUp|true
+20160822102130|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|9|22|remoteHungUp|true
+20160822103215|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|18|remoteNoAnswer|false
+20160822103645|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|1|22|remoteHungUp|true
+20160822104430|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|4|22|remoteHungUp|true
+20160822105701|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|1|22|remoteHungUp|true
+20160822111414|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822111655|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822112332|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|18|remoteNoAnswer|false
+20160822112927|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822144156|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|7|22|remoteHungUp|true
+20160822144239|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|2|22|remoteHungUp|true
+20160822144504|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|5|22|remoteHungUp|true
+20160822144929|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|9|22|remoteHungUp|true
+20160822145053|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|8|localWaitTimeout|true
+20160822145212|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|3|22|remoteHungUp|true
+20160822224210|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|7|7|localHungup|true
+--------------------------------------------------------------------
+20160822100032|I|sip:10105858@zte.com.cn|sip:10145777@zte.com.cn|4|7|localHungup|true
+
+
+20160822143941|A|sip:10002450@zte.com.cn|sip:10003853@zte.com.cn|269
+--------------------------------------------------------------------
+
+
+20160822114804|I|sip:10009810@zte.com.cn|sip:10008587@zte.com.cn|8|22|remoteHungUp
+--------------------------------------------------------------------
+20160822125630|A|sip:10007438@zte.com.cn|sip:10009810@zte.com.cn|534|0|CallEnd_Success
+20160822124705|A|sip:10007438@zte.com.cn|sip:10009810@zte.com.cn|0|14|CallEnd_RemoteSBCRegisterFailed
+
+
+20160822155329|A|sip:10039081@zte.com.cn|sip:10193455@zte.com.cn|0|14|CallEnd_RemoteSBCRegisterFailed
+--------------------------------------------------------------------
+
+
+20160822094936|A|sip:6407000865@zte.com.cn|sip:10099429@zte.com.cn|0|1|CallEnd_LocalCancel|false
+--------------------------------------------------------------------
+20160822094901|A|sip:10099429@zte.com.cn|sip:6407000865@zte.com.cn|0|1|CallEnd_LocalCancel|false
+20160822095043|A|sip:10099429@zte.com.cn|sip:6407000865@zte.com.cn|43|0|CallEnd_Success|true
+
+
+20160822094848|A|sip:10099429@zte.com.cn|sip:10155443@zte.com.cn|0|1|CallEnd_LocalCancel|false
+20160822094901|A|sip:10099429@zte.com.cn|sip:6407000865@zte.com.cn|0|1|CallEnd_LocalCancel|false
+20160822095043|A|sip:10099429@zte.com.cn|sip:6407000865@zte.com.cn|43|0|CallEnd_Success|true
+--------------------------------------------------------------------
+20160822094936|A|sip:6407000865@zte.com.cn|sip:10099429@zte.com.cn|0|1|CallEnd_LocalCancel|false
+
+
+20160822111042|A|sip:10007930@zte.com.cn|sip:10011295@zte.com.cn|0|14|CallEnd_RemoteSBCRegisterFailed
+--------------------------------------------------------------------
+
+
+20160822185741|A|sip:10022006@zte.com.cn|sip:10044948@zte.com.cn|235|0|CallEnd_Success
+--------------------------------------------------------------------
+
+
+20160822151519|I|sip:@zte.com.cn|sip:10105858@zte.com.cn|0|18|remoteNoAnswer|true
+20160822151904|I|sip:@zte.com.cn|sip:10105858@zte.com.cn|0|1|localCancel|true
+--------------------------------------------------------------------
+
+
+20160822100032|I|sip:10105858@zte.com.cn|sip:10145777@zte.com.cn|4|7|localHungup|true
+--------------------------------------------------------------------
+20160822085541|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|18|remoteNoAnswer|false
+20160822090122|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822090341|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822090546|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822095351|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|1|localCancel|false
+20160822095521|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822095542|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822101156|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|2|22|remoteHungUp|true
+20160822101549|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|7|22|remoteHungUp|true
+20160822102515|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|1|22|remoteHungUp|true
+20160822105228|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|18|remoteNoAnswer|false
+20160822110130|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|4|7|localHungup|true
+20160822110617|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|18|remoteNoAnswer|false
+20160822111139|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822111205|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822111235|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822111308|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822161648|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|18|remoteNoAnswer|false
+20160822222221|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|4|22|remoteHungUp|true
+20160822222318|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|5|22|remoteHungUp|true
+20160822085818|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822085938|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822090034|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822090242|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822091022|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822091112|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822100111|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|4|22|remoteHungUp|true
+20160822102130|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|9|22|remoteHungUp|true
+20160822103215|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|18|remoteNoAnswer|false
+20160822103645|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|1|22|remoteHungUp|true
+20160822104430|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|4|22|remoteHungUp|true
+20160822105701|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|1|22|remoteHungUp|true
+20160822111414|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822111655|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822112332|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|18|remoteNoAnswer|false
+20160822112927|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|17|remoteBusyBySip|true
+20160822144156|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|7|22|remoteHungUp|true
+20160822144239|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|2|22|remoteHungUp|true
+20160822144504|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|5|22|remoteHungUp|true
+20160822144929|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|9|22|remoteHungUp|true
+20160822145053|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|0|8|localWaitTimeout|true
+20160822145212|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|3|22|remoteHungUp|true
+20160822224210|I|sip:10145777@zte.com.cn|sip:10105858@zte.com.cn|7|7|localHungup|true
+20160822151519|I|sip:@zte.com.cn|sip:10105858@zte.com.cn|0|18|remoteNoAnswer|true
+20160822151904|I|sip:@zte.com.cn|sip:10105858@zte.com.cn|0|1|localCancel|true
+
+
+23:41:43 详情信息查询结束
+
+结果输出日期: 2016-08-23 23:41:50
+
